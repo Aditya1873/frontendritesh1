@@ -7,7 +7,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ["https://frontendritesh-hwcp4hqd1-aditya1873s-projects.vercel.app"],
+  origin: ["https://rj-international-traders-7xs1.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
