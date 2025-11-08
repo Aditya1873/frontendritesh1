@@ -5,24 +5,24 @@ const dotenv = require("dotenv");
 dotenv.config();
 const app = express();
 
-// Middleware
 app.use(cors({
-  origin: ["https://rj-international-traders-7xs1.vercel.app"],
+  origin: [
+    "http://localhost:8080",
+    "http://localhost:5173",
+    "https://rj-international-traders-24fr.vercel.app"
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
 
 app.use(express.json());
 
-// Import routes
 const contactRoutes = require("./routes/contactRoutes");
-
-// Mount routes
 app.use("/api", contactRoutes);
+
 app.get("/", (req, res) => {
-  res.send("Backend is running!");
+  res.send("✅ RJ International Backend is running successfully!");
 });
 
-
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
