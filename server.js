@@ -9,7 +9,7 @@ app.use(cors({
   origin: [
     "http://localhost:8080",
     "http://localhost:5173",
-    "https://rj-international-traders-vyud.vercel.app"
+    "https://frontendritesh-v76a.vercel.app"
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
