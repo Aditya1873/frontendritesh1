@@ -9,7 +9,8 @@ app.use(cors({
   origin: [
     "http://localhost:8080",
     "http://localhost:5173",
-    "https://frontendritesh.vercel.app"
+    "https://frontendritesh.vercel.app",
+    "https://frontendritesh-4vw5.vercel.app"
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
